@@ -1,0 +1,37 @@
+{
+  "name": "remark-vtranslit",
+  "version": "1.0.0",
+  "description": "A remarkjs plugin for vtranslit.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "author": "Prasanna Venkatesh T S <vipranarayan14@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vtranslit": "4.4.1"
+  },
+  "devDependencies": {
+    "rehype-stringify": "5.0.0",
+    "remark-parse": "6.0.3",
+    "remark-rehype": "4.0.0",
+    "unified": "7.1.0",
+    "vtranslit-scheme-deva": "0.4.0",
+    "vtranslit-scheme-itrn": "0.3.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vipranarayan14/remark-vtranslit.git"
+  },
+  "keywords": [
+    "vtranslit",
+    "remark"
+  ],
+  "bugs": {
+    "url": "https://github.com/vipranarayan14/remark-vtranslit/issues"
+  },
+  "homepage": "https://github.com/vipranarayan14/remark-vtranslit#readme"
+}
