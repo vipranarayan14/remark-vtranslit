@@ -1,6 +1,6 @@
-# remarkVtranslit
+# remark-vtranslit
 
-remarkVtranslit is a [remarkjs](https://remark.js.org/) plugin for [vtranslit](https://github.com/vipranarayan14/vtranslit).
+remark-vtranslit is a [remarkjs](https://remark.js.org/) plugin for [vtranslit](https://github.com/vipranarayan14/vtranslit).
 
 ## Setup
 
