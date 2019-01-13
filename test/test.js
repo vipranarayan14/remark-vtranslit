@@ -13,7 +13,7 @@ const remarkVtranslit = require('..');
 const md = readFileSync('./test/sample.md');
 
 unified()
-    .use(remarkParse,)
+    .use(remarkParse)
     .use(remarkVtranslit, [
         vTranslitSchemeItrn,
         vTranslitSchemeDeva
