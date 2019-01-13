@@ -1,8 +1,10 @@
 const { vTranslit } = require('vtranslit');
 
-const vtranslitRe = /^\/\/(.+?)\/\//;
+const vtranslitRe = /^\/\/(.+?)\/\//s;
 
 const locator = (value, fromIndex) => value.indexOf('//', fromIndex);
+
+const clean = str => str.trim().replace(/\n/g, ' ');
 
 const initInlineTokenizer = (vt, toSchemeCode) => (eat, value) => {
 
@@ -10,7 +12,7 @@ const initInlineTokenizer = (vt, toSchemeCode) => (eat, value) => {
 
     if (match) {
 
-        const content = match[1].trim();
+        const content = clean(match[1]);
 
         if (content[0] === '/') {
 
@@ -29,7 +31,8 @@ const initInlineTokenizer = (vt, toSchemeCode) => (eat, value) => {
             data: {
                 hName: 'span',
                 hProperties: {
-                    className: `vtranslit vtranslit-scheme-${toSchemeCode.toLowerCase()}`
+                    className: `vtranslit vtranslit-scheme-${toSchemeCode.toLowerCase()}`,
+                    lang: 'sa'
                 },
                 hChildren: [{
                     type: 'text',
