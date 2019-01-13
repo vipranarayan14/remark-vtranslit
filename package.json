@@ -4,7 +4,10 @@
   "description": "A remarkjs plugin for vtranslit.",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "preversion": "npm test",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags"
   },
   "author": "Prasanna Venkatesh T S <vipranarayan14@gmail.com>",
   "license": "MIT",
